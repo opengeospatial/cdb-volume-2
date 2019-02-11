@@ -1,0 +1,157 @@
+[Appendix]
+= Annex F: Rationale: Partitioning the Earth into Tiles
+
+*Formerly Appendix A11 in Volume 2 of the CDB Best Practice.*
+
+This section provides rationale for partitioning the world into tiles.
+
+The design of the CDB standard tile representation is centered on three
+primary considerations.
+
+. A tile representation comprehensive enough to accommodate the entire earth.
+. A tile representation that lends itself to real-time implementation by a CDB system and all of its attached simulator client-devices.
++
+A numerically straightforward mapping (such as a simple scaling) to map
+lat-long coordinates into CDB coordinates and vice versa is highly
+desirable for real-time implementation considerations.
+. A tile representation with a system of units that conforms as much as possible to geographic standards.
++
+One of the underlying motivations driving the CDB tile representation is
+the need for a system that will remain as close to the raw source data
+as possible which currently is DTED and GeoTIFF; DTED uses a geographic
+coordinate system defined by latitudes and longitudes. The basic unit in
+DTED is a geo-cell, which always has a height and width of one degree.
+In order to maintain a density of data that does not increase
+inordinately when moving towards the poles, the grid post intervals
+(measured in degrees or arc-sec) along the longitudinal axis are
+increased at specific latitudes; for instance, at DTED level 2, the
+latitude interval is always one second of arc but the longitude interval
+is one second of arc at latitudes from 0 to 50 degrees, from latitudes
+50 to 70 the interval is two arc seconds and so on as shown in Table
+A-3. INTERVALS FOR DTED LEVEL 2.
+
+*Table A-3. INTERVALS FOR DTED LEVEL 2*
+
+[cols=",,,",options="header",]
+|======================
+a|
+DTED
+
+Zone
+
+ a|
+Latitude Range
+
+(Degrees)
+
+ a|
+Latitude Interval
+
+(Arc seconds)
+
+ a|
+Longitude Interval
+
+(Arc seconds)
+
+|I |0 – 50 N-S |1 |1
+|II |50 – 70 N-S |1 |2
+|III |70 – 75 N-S |1 |3
+|IV |75 – 80 N-S |1 |4
+|V |80 – 90 N-S |1 |6
+|======================
+
+Before going into the detailed design of the CDB tile representation, it
+is worth stating the guiding principles that constrain the approach used
+by the CDB tile representation.
+
+. The earth model is divided (in latitude) into slices.
+. The slice’s x-axis is aligned to WGS-84 lines of latitude.
+. The slice’s y-axis is aligned to WGS-84 lines of longitude.
+. The number of units along the slice’s y-axis for a given level of detail
+is the same for all slices.
++
+The earth surface geodetic dimension in arc-second of y-axis units
+within an earth slice and in all earth slices is exactly the same,
+regardless of latitude.
+. The geodetic dimension of an x-axis unit in arc-second is constant
+within a zone, but is re-defined at pre-selected latitudes to achieve a
+greater level of spatial sampling uniformity in all tiles; this
+overcomes the narrowing effect of increased latitudes on longitudinal
+distances. The definition of zones in the CDB is the same as those in
+DTED (with the exception of the poles).
+. The number of units along the slice’s x-axis for a given level of detail
+is the same within each zone.
+. The number of units along the slice’s y-axis is constrained to a
+2^n^-multiple in all slices.
++
+Many simulator client devices impose constraints related to the run-time
+use of binary pyramidal structures (such as mip-maps, quadtrees, etc.).
+A binary pyramidal structure is simply a collection of two-dimensional
+arrays; each array represents the same content but at successively finer
+levels of resolution.
+. The number of units along the slice’s x-axis will vary depending on
+which zone the latitude of the slice belongs. At this point we introduce
+the concept of a CDB Geocell, which differs slightly from a DTED
+Geocell. A DTED cell is always 1 × 1 degrees. In contrast, a CDBGeocell
+always has a height of 1 degree but has a varying width depending on its
+latitude. Table A-4. Size of CDB Geocell per zone shows the dimensions
+of a CDB Geocell per zones of latitude. For instance, in latitude zone
+5, which goes from –50 to 50 degrees latitude, a CDB Geocell is 1 × 1
+degree, in zone 4 and 6 which goes from latitude 50 to 70 degrees the
+cell size is 1 × 2 degrees. The main reason to introduce this concept is
+to maintain a reasonable eccentricity between the sides by trying to
+keep them as close to a square as possible. Two criteria are used to
+define the size of a CDB Geocell.
++
+a. A CDB Geocell must contain a whole number of DTED Geocells; in other
+words a CDB Geocell must start and end on a whole degree along the
+longitudinal axis. This is done so as to facilitate mapping from CDB
+Geocells to DTED Geocells.
+b. The length of the CDB Geocell must be a whole factor of 180, in other
+words length of 1, 2, 3, 4, 6 and 12 degrees are legal but lengths of 7
+and 8 degrees would not be since these are not exact factors of 180.
+
+*Table A-4. Size of CDB Geocell per zone*
+
+[cols=",,,",options="header",]
+|===============================
+a|
+CDB
+
+Zone
+
+ a|
+Latitude Range
+
+(Degrees)
+
+ a|
+CDBGeocell size
+
+(deg Lat × deg Lon))
+
+ a|
+Number of DTED
+
+Geocells
+
+|0 |–90 ≤ lat < –89 |1 X 12 |12
+|1 |–89 ≤ lat < –80 |1 X 6 |6
+|2 |–80 ≤ lat < –75 |1 X 4 |4
+|3 |–75 ≤ lat < –70 |1 X 3 |3
+|4 |–70 ≤ lat < –50 |1 X 2 |2
+|5 |–50 ≤ lat < +50 |1 X 1 |1
+|6 |+50 ≤ lat < +70 |1 x 2 |2
+|7 |+70 ≤ lat < +75 |1 x 3 |3
+|8 |+75 ≤ lat < +80 |1 x 4 |4
+|9 |+80 ≤ lat < +89 |1 x 6 |6
+|10 |+89 ≤ lat < +90 |1 x 12 |12
+|===============================
+
+The variable CDB Geocell size in the CDB standard has the following
+benefits.
+
+. Reduces the simulator client processing overheads associated with the switching from one zone to another. (Due to the small number of zones across the earth.)
+. Reduces the variation of longitudinal dimensions (in meters) to a maximum of 50%.
+. Improves storage efficiency.

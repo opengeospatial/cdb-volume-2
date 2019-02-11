@@ -1,0 +1,94 @@
+[Appendix]
+= Annex S: Default Read and Write values for Simulator Client-Devices
+
+As seen throughout this document, the CDB standard provides guidelines
+with respect to default values in cases where no data could be read from
+the CDB for requested datasets. Those default parameters are captured in
+a Metadata file within the CDB. The Table below summarizes all the
+Default Parameters Names and the suggested initial values to be used by
+client-devices. In cases where the default parameter would be missing
+altogether from *\CDB\Metadata\Defaults.xml*, Client-Devices shall use
+the “Default Value” found in the fourth column. A “Read” default refers
+to the value being assumed while reading the CDB data. A “Write” default
+refers to the value being written to the file when content-generation
+tools have partial source data.
+
+[cols=",,,,",options="header",]
+|=======================================================================
+|*Parameter Name* |*Dataset* |*Type* |*Default Value* |*R/W*
+|Default_Elevation-1 |001_Elevation |float |0 m |R
+
+|Default_Elevation-[2-99] |001_Elevation |float |0 m |R
+
+|Default_Primary_Elevation_Control |001_Elevation |integer |INSIDE (1)
+|R
+
+|Default_Subordinate_Elevation_Control |001_Elevation |integer
+|NO_ELEVATION (0) |R
+
+|Default_Bathymetry |001_Elevation |float |0 m |R
+
+|Default_Tide |001_Elevation |float |2.5 m |R
+
+|Default_MinElevation_CaseI |002_MinMaxElevation |float
+|Default_Elevation-1 |R
+
+|Default_MaxElevation_CaseI |002_MinMaxElevation |float
+|Default_Elevation-1 |R
+
+|Default_MinElevation_CaseII |002_MinMaxElevation |float |-400 m |R
+
+|Default_MaxElevation_CaseII |002_MinMaxElevation |float |8846 m |R
+
+|Default_MinElevation_CaseIII |002_MinMaxElevation |float |8846 m |W
+
+|Default_MaxElevation_CaseIII |002_MinMaxElevation |float |-400 m |W
+
+|Default_MaxCulture_CaseI |003_MaxCulture |float |600 m |R
+
+|Default_MaxCulture_CaseII |003_MaxCulture |float |0 m |R
+
+|Default_VSTI_Y_Mono |004_Imagery |float |0.5 |R
+
+|Default_VSTI_Y_Red |004_Imagery |float |0.5 |R
+
+|Default_VSTI_Y_Green |004_Imagery |float |0.5 |R
+
+|Default_VSTI_Y_Blue |004_Imagery |float |0.5 |R
+
+|Default_VSTLM_Mono |004_Imagery |float |0.0 |R
+
+|Default_VSTLM_Red |004_Imagery |float |0.0 |R
+
+|Default_VSTLM_Green |004_Imagery |float |0.0 |R
+
+|Default_VSTLM_Blue |004_Imagery |float |0.0 |R
+
+|Default_Imagery_Gamma |004_Imagery |float |1.0 |R
+
+|Default_RoadNetwork_LTN |201_RoadNetwork |integer |2 |R
+
+|Default_RailRoadNetwork_LTN |202_RailRoadNetwork |integer |1 |R
+
+|Default_GSModelTexture_Gamma |301_GSModelTexture |float |1.0 |R
+
+|Default_GSModelInteriorTexture_Gamma |306_GSModelInteriorTexture |float
+|1.0 |R
+
+|Default_GTModelTexture_Gamma |511_GTModelTexture |float |1.0 |R
+
+|Default_GTModelInteriorTexture_Gamma |507_GTModelInteriorTexture |float
+|1.0 |R
+
+|Default_MModelTexture_Gamma |601_MModelTexture |float |1.0 |R
+
+|Default_Base_Material | |string |BM_LAND-MOOR |R
+
+|Default_Material_Layer | |integer |0 |R
+
+|Default_AO1 | |float |0.0 |R
+
+|Default_SCAL[x,y,z] | |float |1.0 |R
+
+|Default_TRF | |integer |4 |R
+|=======================================================================

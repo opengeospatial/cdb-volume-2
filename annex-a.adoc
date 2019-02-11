@@ -1,0 +1,4 @@
+[Appendix]
+= Annex A: Conformance Class Abstract Test Suite (Normative)
+
+Not applicable for this document.

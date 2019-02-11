@@ -1,0 +1,54 @@
+[Appendix]
+= Annex I: Informative: ZipFile Format Notes
+
+
+*Formerly Annex U in Volume 2 of the OGC CDB Best Practice*
+
+The archive zip format used in the CDB standard is based on
+
+[source,txt]
+----
+APPNOTE.TXT - .ZIP File Format Specification
+
+URL: http://www.pkware.com/documents/APPNOTE/APPNOTE-6.3.1.TXT
+
+Version: 6.3.1
+
+Revised: April 11, 2007
+
+Copyright (c) 1989 - 2007 PKWARE Inc., All Rights Reserved.
+
+The use of certain technological aspects disclosed in the currentAPPNOTE
+is available pursuant to the below section entitled "Incorporating
+PKWARE Proprietary Technology into Your Product".
+----
+
+CDB zip compliant reader is required to support as a minimum the
+following features defined in APPNOTE.TXT:
+
+* Local file header (Note: Extra field can be inserted but not required
+to be read)
+* File data
+* Data descriptor:
+* Central directory structure (Note: Digital signature is supported but
+will not be read)
+* End of central directory record: (Note: ZIP file comments are
+supported but will not be read)
+
+The compression methods supported:
+
+* No compression
+* Deflate (Enhanced Deflate is not required to be supported)
+
+The following features are not required to be supported thus are
+optional and left to the implementation:
+
+* Archive decryption header
+* Archive extra data record.
+* Zip64 end of central directory record
+* Zip64 end of central directory locator
+* Splitting and Spanning ZIP files
+* Encryptions of any type
+
+Note that anything not listed in this section is by default assumed not
+to be supported.

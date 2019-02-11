@@ -1,0 +1,72 @@
+== Scope
+
+
+This document contains a number of annexes related to the OGC CDB Core
+standard.
+
+For the purposes of being able to cross reference this OGC Best Practice
+with the previous versions of the CDB standard, the following annex
+“crosswalk” is provided.
+
+[cols=",",]
+|=======================================================================
+|OGC Best Practice and CDB 3.2 |OGC CDB Standard Version 1.0
+
+|Formerly Annex A10 in Volume 2 |Annex B Rationale: Sensor Simulation -
+Achieving Device-Independence
+
+|Main Body: Rationale for using JPEG |Annex C Reasons for Using JPEG
+
+|Formerly Annex B in Volume 2 |Annex D: TIFF Implementation Requirements
+
+|Formerly Annex D in Volume 2 |Annex E: ShapeFile dBASE III Guidance
+
+|Formerly Annex A.11 in Volume 2 |Annex F: Annex F Rationale:
+Partitioning the Earth into Tiles
+
+|Formerly Annex A.12 |Annex G Rationale: Importance of Level of Detail
+
+|Formerly Annex A.17 Volume 2 |Annex H: JPEG Informative annex
+
+|Was Annex U, Volume 2 |Annex I ZIP File Informative annex
+
+|Formerly Annex E, Volume 2 |Annex J: Light Hierarchy
+
+|Formerly Annex M, Volume 2 |Annex M: CDB Directory Naming and Structure
+
+|Formerly Annex O, Volume 2 |Annex O: List of Texture Component
+Selectors
+
+|Formerly Annex Q, Volume 2 |Annex Q: Table of Dataset Codes
+
+|Formerly Annex R, Volume 2 |Annex R: Derived Datasets within the CDB
+
+|Formerly Annex S, Volume 2 |Annex S: Default Read and Write values to
+be used by Simulator Client-Devices
+|=======================================================================
+
+For ease of editing and review, the standard has been separated into 12
+Volumes and a schema repository.
+
+* Volume 0: OGC CDB Companion Primer for the CDB standard. (Best
+Practice)
+* Volume 1: OGC CDB Core Standard: Model and Physical Data Store
+Structure. The main body (core) of the CBD standard (Normative).
+* Volume 2: OGC CDB Core Model and Physical Structure Annexes (Best
+Practice).
+* Volume 3: OGC CDB Terms and Definitions (Normative).
+* Volume 4: OGC CDB Use of Shapefiles for Vector Data Storage (Best
+Practice).
+* Volume 5: OGC CDB Radar Cross Section (RCS) Models (Best Practice).
+* Volume 6: OGC CDB Rules for Encoding Data using OpenFlight (Best
+Practice).
+* Volume 7: OGC CDB Data Model Guidance (Best Practice).
+* Volume 8: OGC CDB Spatial Reference System Guidance (Best Practice).
+* Volume 9: OGC CDB Schema Package: provides the normative schemas for
+key features types required in the synthetic modelling environment.
+Essentially, these schemas are designed to enable semantic
+interoperability within the simulation context. (Normative)
+* Volume 10: OGC CDB Implementation Guidance (Best Practice).
+* Volume 11: OGC CDB Core Standard Conceptual Model (Normative)
+* Volume 12: OGC CDB Navaids Attribution and Navaids Attribution
+Enumeration Values (Best Practice)

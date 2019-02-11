@@ -1,0 +1,84 @@
+[Appendix]
+= Annex R: Derived Datasets within the CDB
+
+
+By using Industry Standards throughout this document, the CDB Standard
+defines the means and mechanisms to populate all the simulation datasets
+without involving data duplication. However, there are situations where
+a specific dataset information type needs to be derived from another
+existing one in order to specialize further the information into another
+dataset type or form.
+
+This consideration becomes a grey area where the off-line tools’
+capability and the run-time simulation clients’ performance levels
+enforces this data derivation.
+
+It is such a case with the Mip-Map data, Min-Max Elevation data, Tile
+Presence data, RCS data, and Raster Material data for example.
+
+[cols=",,",options="header",]
+|=======================================================================
+|*Source Dataset* a|
+*Data Manipulation*
+
+*Description*
+
+ |*Resulting Dataset(s)*
+|Elevation Dataset |In order to produce the various Level Of Details
+within the Elevation Dataset, it is often necessary to over-sample or
+sub-sample a primary set of data values. Since those values within the
+LOD hierarchy may come from a single data source, the LODs can be seen
+as derived information which can better accommodate the client needs
+based on their performance level. |Elevation LODs
+
+|Elevation Dataset |For clients that need to compute line of sights
+(LOS) between simulation entities spread across a vast terrain area, it
+is imperative to have a fast way of knowing the minimum and maximum
+elevations within a tile without loading the entire elevation data grid.
+The min/max elevation dataset can be used to ensure a fast
+pre-determination of entities occultation state with the terrain. The
+min/max data is stored in the form of a quad-tree pyramid and is based
+on the area covered at the given depth level of the quad-tree. For
+example, for the maximum dataset the top will contain the maximum for
+the whole of the geocell, the next pyramid level contains maximum data
+for each the quarter geocells and so on. Similarly for the minimum the
+top represents the minimum for the whole of the geocell going down as
+for maximums. Currently the pyramid size is fixed and goes down to level
+9 which covers areas that are approximately 256x256 meters square; note
+that the depth level can be modified to a finer or coarser level but
+level 9 is suggested as a reasonable compromise of performance vs.
+storage. A tool will pre-determine the minimum and maximum elevations
+within a geocell’s elevations and generate the quad-trees described
+previously; note that the tool will use all of the elevation data that
+is present in the elevation dataset to determine the maximums or
+minimums in a given area. The tool will provide Min-Max values to client
+devices through the Min-Max Elevation datasets in the CDB. |Min-Max
+Elevation
+
+|Vector Datasets (Point, Lineal and Areal Features) |The Max Culture
+Height data is produced for clients that need to compute line of sights
+(LOS) between simulation entities spread across a vast terrain area that
+take into account the maximum cultural feature heights. The dataset
+helps rapidly assess an intersection status of line-of-sight with
+cultural features. This dataset is derived from the Vector Datasets of
+the CDB for corresponding tiles. The storage is done via a quad-tree
+similar to that of the min/max elevation the top of the pyramid
+represents the height of the highest cultural feature in the dataset
+going down to a suggested depth level of 9. |Max Culture Height
+
+|3D Model (GT, GS, MM) Datasets |The polar diagram data (covering all
+aspect angles) of the RCS dataset for Geotypical, Geospecific or Moving
+Models cannot readily be computed at run-time due to the complex
+mathematical computing algorithms and resources required to determine
+the Electro-Magnetic Energy absorption levels by the model’s materials,
+the corner reflections, the multi-path reflections, EM parameters
+(frequency, polarization) effects, and so on. Therefore, off-line COTS
+tools are used to analyze the 3D model geometry and its materials in
+order to produce the RCS dataset specifically for different frequencies
+and polarizations. |RCS (Radar Cross Section)
+
+|Vector Datasets (Point, Lineal and Areal Features) |Since the material
+attribution is normally done in the vector data, a rasterization
+operation among all features is required to come up with a raster grid
+of attributed materials. |Raster Material
+|=======================================================================

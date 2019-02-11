@@ -1,0 +1,26 @@
+[Appendix]
+=  Annex M: CDB Directory Naming and Structure
+
+*Formerly Appendix M, Volume 2 of the OGC CDB Best Practice*
+
+With CDB version 3.2 (prior to the submission into the OGC), Appendix M
+was used to present the complete list of names allowed to construct the
+directories of the CDB. As of version 3.2 (as submitted into the OGC
+standards process), the appendix has been replaced by a combination of
+folder hierarchy and metadata files and controlled vocabularies
+delivered with the CDB Distribution Package.
+
+The /CDB folder hierarchy provides a complete list of directory and file
+name patterns of the CDB; it summarizes the structure of the CDB
+presented in chapter 3, Volume 1: Core. The following files are
+necessary to expand the patterns:
+
+* /CDB/Metadata/Feature_Data_Dictionary.xml provides the list of
+directory names associated with feature codes;
+* /CDB/Metadata/Moving_Model_Codes.xml provides the list of names for
+DIS Entity Kinds, Domains, and Categories; and
+* /CDB/Metadata/DIS_Country_Codes.xml contains the list of DIS Country
+Names.
+
+Together, these files provide all the information required to build the
+names of all directories permitted by the CDB standard.

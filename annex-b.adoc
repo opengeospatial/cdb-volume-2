@@ -1,0 +1,73 @@
+[Appendix]
+= Annex B: Rationale: Sensor Simulation - Achieving Device-Independence
+
+*Formerly Annex A10 in Volume 2*
+
+One of the primary objectives of the CDB Standard is to provide and
+integrate all of the data required by all sensor devices, not just Image
+Generators producing the Out the Window (OTW) scenes. The purpose of
+this integration, among other things, is to achieve and maintain a high
+level of correlation among the many client-devices (subsystems) within a
+simulator. Furthermore, this integration must be done independently of
+the client-device or the sensor type, with little or no duplication of
+data amongst clients. In addition to the OTW, many simulator
+client-devices are required to simulate the synthetic environment over
+different portions of the electromagnetic spectrum, infrared (e.g. FLIR,
+NVG), microwaves (e.g. radar), audio (e.g. sonar), etc. Up to now, the
+current state of the art approaches to the simulation of sensors has
+typically been quite proprietary to the client-device implementation of
+the various vendors. There have been no universally accepted simulation
+models suitable for use in simulation.
+
+Sensor simulation typically requires a simulation of the device itself,
+supplemented by a complete simulation of the synthetic environment over
+the portion of the electromagnetic spectrum that is relevant to this
+device. The former simulation is referred to as the **S**ensor
+**S**imulation **M**odel (SSM) while the latter is called the **S**ensor
+**E**nvironmental **M**odel (SEM). In the past, the SEM relied heavily
+on environmental databases whose content was designed to match the
+functionality, fidelity, structure and format requirements of the SEM.
+The level of realism possible by the SEM depended *heavily* on the
+quality, quantity and completeness of the data available. The
+environmental database was highly device-specific and could not be
+readily ported to other platforms.
+
+A SEM is usually based on mathematical model of the environment for the
+portion of the electromagnetic spectrum of interest. The SEM acts much
+as a black box that produces a response in accordance to input data. A
+significant portion of this data must come from the CDB; however, the
+key is to segregate all device-dependent data and all SEM-dependent data
+from the modeling data that represents the synthetic environment. In
+order to accommodate the most different kind of sensors possible, a
+common denominator must be chosen. In the CDB standard, this common
+denominator is called a material. This is the subject of this annex.
+
+One of the fundamental issues of sensor simulation involves the handling
+of material properties. As discussed earlier, the determination of which
+material properties should be supported heavily depends on:
+
+a.  the sensor types to be supported;
+b.  the vendors’ sensor simulation implementations to be supported; and
+c.  the level of fidelity, functionality and precision of the SEMs to be
+supported.
+
+Clearly, the task of determining a definitive list of material
+properties that would accommodate all of the above requirements for the
+today’s sensor types, vendor implementations and SEMs would be a
+significant challenge. Furthermore, once released, the materials
+properties would limit any SEM innovation by the industry. As a result,
+the CDB Standard limits its jurisdiction over the material properties.
+
+Instead, the CDB standard defines and publicly defines a list of
+materials that can be used in a CDB. It is the responsibility of each
+vendor to define the properties (that satisfies the sensor type) for
+these CDB materials. As a result, vendors are totally free to select
+material properties that satisfy the fidelity, functionality and
+precision requirements of the SEM for the sensor type of interest.
+Alternately, if the vendors have their own list of materials, they can
+create a mapping between CDB materials and their internally supported
+list of materials. This approach allows client-devices to retain their
+SEMs as well as their own sets of material properties.
+
+The materials.xsd and materials.xml schema in the CDB schema package
+enumerates the base materials supported by this standard.

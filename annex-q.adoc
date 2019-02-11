@@ -1,0 +1,93 @@
+[Appendix]
+= Annex Q: Table of Dataset Codes
+
+
+*Formerly Appendix Q in Volume 2 of the OGC CDB Best Practice*.
+
+The table below summarizes the CDB dataset codes along with their names
+and their applicability to the community 3.0 specification and the OGC
+standard, which is based on CDB version 3.2.
+
+{set:cellbgcolor:white}
+[cols=",,,",options="header",]
+|====================================
+2+|*Dataset*
+2+|*Specification*
+|*Name* |*Code* |*3.0* |*OGC*
+|Elevation |001 |√ |√
+|MinMaxElevation |002 |√ |√
+|MaxCulture |003 |√ |√
+|Imagery |004 |√ |√
+|RMTexture |005 |√ |√
+|RMDescriptor |006 |√ |√
+|Reserved{set:cellbgcolor:red} |007 | |
+|Reserved |008 | |
+|Reserved |020 | |
+|GSFeature{set:cellbgcolor:white}|100 |√ |√
+|GTFeature |101 |√ |√
+|GeoPolitical |102 |√ |√
+|VectorMaterial |200 |√ |√
+|RoadNetwork |201 |√ |√
+|RailRoadNetwork |202 |√ |√
+|PowerLineNetwork |203 |√ |√
+|HydrographyNetwork |204 |√ |√
+|GSModelGeometry |300 |√ |√
+|GSModelTexture |301 |√ |√
+|GSModelSignature |302 |√ |√
+|GSModelDescriptor |303 |√ |√
+|GSModelMaterial |304 | |√
+|GSModelInteriorGeometry |305 | |√
+|GSModelInteriorTexture |306 | |√
+|GSModelInteriorDescriptor |307 | |√
+|GSModelInteriorMaterial |308 | |√
+|GSModelCMT |309 | |√
+|T2DModelGeometry |310 | |√
+|GSModelInteriorCMT |311 | |√
+|T2DModelCMT |312 | |√
+|T3DModelGeometry |320 | |√
+|T3DModelTexture |321 | |√
+|T3DModelMaterial |322 | |√
+|T3DModelInteriorGeometry |323 | |√
+|T3DModelInteriorTexture |324 | |√
+|T3DModelInteriorMaterial |325 | |√
+|NavData |400 |√ |√
+|Navigation |401 |√ |√
+.2+|GTModelGeometry |500 |√ |√
+|510 | |√
+.2+|GTModelTexture |501 |√ |{set:cellbgcolor:grey}
+|{set:cellbgcolor:white}511 | |√
+.2+|GTModelSignature |502 |√ |{set:cellbgcolor:grey}
+|{set:cellbgcolor:white}512 | |√
+|GTModelDescriptor |503 |√ |√
+|GTModelMaterial |504 | |√
+|GTModelCMT |505 | |√
+|GTModelInteriorGeometry |506 | |√
+|GTModelInteriorTexture |507 | |√
+|GTModelInteriorDescriptor |508 | |√
+|GTModelInteriorMaterial |509 | |√
+|GTModelInteriorCMT |513 | |√
+|MModelGeometry |600 |√ |√
+|MModelTexture |601 |√ |√
+.2+|MModelSignature |602 |√ |{set:cellbgcolor:grey}
+|{set:cellbgcolor:white}606 | |√
+|MModelDescriptor |603 |√ |√
+|MModelMaterial |604 | |√
+|MModelCMT |605 | |√
+|Metadata |700 | |√
+|ClientSpecific |701 | |√
+|Reserved for CDB Extensions {set:cellbgcolor:red}|9xx | |
+|====================================
+
+
+[cols=",",options="",]
+|============================
+|{set:cellbgcolor:white} |Dataset Code is not used
+| |
+|√ |Dataset Code is in use
+| |
+|{set:cellbgcolor:grey}|Dataset Code is deprecated
+| {set:cellbgcolor!}|
+|{set:cellbgcolor:red} |Dataset Code is reserved
+|============================
+
+{set:cellbgcolor!}

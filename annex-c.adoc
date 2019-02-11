@@ -1,0 +1,41 @@
+[Appendix]
+= Annex C: Reasons for Using Jpeg
+
+(Formerly from body of Best Practice Volume 1)
+
+The CDB Standard prescribes the use of an industry standard compression
+algorithm for its storage intensive raster imagery datasets. This not
+only provides a substantial reduction in storage, but also reduces the
+data transmission bandwidths associated with simulator’s access to the
+synthetic environment database at runtime. As a result of its storage
+efficiency, the CDB Standard relies on relatively few data formats for
+storing its datasets. There is no benefit (other than storage
+efficiency) to be gained in supporting any other specialized data
+formats whose underlying objective is only for storage efficiency. The
+CDB Standard embodies the JPEG 2000 industry standard format for raster
+imagery because it has comparable storage efficiency to all of these
+image formats without sacrificing any generality. JPEG 2000 has been
+chosen by the CDB Standard as a format for the storage of OTW raster
+imagery because of the following characteristics.
+
+. High compression efficiency: Compression better than 0.25 bits per pixels. Virtually indiscernible loss in image quality for 10:1 – 20:1
+compression.
+. Lossless and lossy compression: Lossless compression ratios approx. 1.7:1
+. Perceptual color space internal coding: Allow dark images to be reconstructed without banding artifacts.
+. High dynamic range: Compress and decompress images with various dynamic ranges (e.g., 1-bit to 16-bit) for each color component.
+. Large images sizes: Up to (2^32 - 1)
+
+There are other characteristics of the JPEG 2000 that are worth mentioning but are not directly beneficial to the CDB Standard. Those
+are:
+
+. Progressive image reconstruction: Allow images to be reconstructed with increasing pixel accuracy and resolution.
+. Region of interest coding: Permits certain Region of Interest (ROI’s) in the image to be coded and transmitted with better quality and
+less distortion than the rest of the image.
+. Seamless quality and resolution scalability: Without having to download the entire file
+. Error resilience during transfers.
+
+JPEG 2000 will be solely targeted at Raster Imagery data only. The
+reason is simply because of its highly efficient compression scheme that
+fits well with the goal of reducing the huge datasets associated with
+Imagery. Other raster-based datasets defined in the CDB will solely be
+using the TIFF format due to their more manageable size.

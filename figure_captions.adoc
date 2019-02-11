@@ -1,0 +1,8 @@
+[#img_*FigureA-14:PagingofTerrainImagerywithanLODStructure*,reftext='{figure-caption} {counter:figure-num}']
+.*Figure A-14: Paging of Terrain Imagery with an LOD Structure*
+image::images/image1.png[]
+
+[#img_*FigureA-15:PagingofTerrainImagerywithoutanLODStructure*,reftext='{figure-caption} {counter:figure-num}']
+.*Figure A-15: Paging of Terrain Imagery without an LOD Structure*
+image::images/image2.png[]
+

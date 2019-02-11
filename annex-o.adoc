@@ -1,0 +1,395 @@
+[Appendix]
+= Annex O: List of Texture Component Selectors
+
+
+*Formerly Appendix O, Volume 2 of the OGC CDB Best Practice*
+
+The following table provides the list of codes to use to build CDB model
+texture filenames.
+
+[cols=",,",options="header",]
+|====================================================================
+|*Texture Kind CS1 (Sxxx)* |*Texture Index CS2 (Txxx)* |*Description*
+.12+|002 – Month |001 |January
+|002 |February
+|003 |March
+|004 |April
+|005 |May
+|006 |June
+|007 |July
+|008 |August
+|009 |September
+|010 |October
+|011 |November
+|012 |December
+.4+|003 – Season |001 |Spring
+|002 |Summer
+|003 |Autumn
+|004 |Winter
+.20+|004 – Uniform Paint Scheme |001 |Grey
+|002 |White
+|003 |Green
+|004 |Black
+|005 |Beige
+|006 |Blue
+|007 |Red
+|008 |Yellow
+|009 |Brown
+|010 |Pink
+|011 |Purple
+|012 |Burgundy
+|013 |Orange
+|014 |Light Blue
+|015 |Khaki
+|016 |Dark Grey
+|017 |Amber
+|018 |Gold
+|019 |Silver
+|020 |Copper
+.5+|005 – Camouflage Paint Scheme |001 |Desert
+|002 |Winter
+|003 |Forest
+|004 |Generic
+|005 |Urban
+.297+|006 – Airline Paint Scheme |001 |AAH Aloha Airlines Inc.
+|002 |AAL American Airlines Inc.
+|003 |AAR Asiana Airlines Inc.
+|004 |AAW Afriqiyah Airways
+|005 |ABR Air Contractors (UK) Limited
+|006 |ACA Air Canada
+|007 |ACI Air Caledonie International
+|008 |ADR Adria Airways - The Airline of Slovenia
+|009 |AEA Air Europa Lineas Aereas, S.A.
+|010 |AEE Aegean Airlines S.A.
+|011 |AEW Aerosvit Airlines
+|012 |AFG Ariana Afghan Airlines
+|013 |AFL Aeroflot Russian Airlines
+|014 |AFR Air France
+|015 |AGN Air Gabon
+|016 |AHY Azerbaijan Hava Yollary
+|017 |AIC Air-India Limited
+|018 |AIZ Arkia - Israeli Airlines Ltd
+|019 |AJM Air Jamaica
+|020 |ALK SriLankan Airlines Limited
+|021 |AMC Air Malta p.l.c.
+|022 |AML Air Malawi Limited
+|023 |AMU Air Macau Company Limited
+|024 |AMX Aeromexico
+|025 |ANA All Nippon Airways Co. Ltd.
+|026 |ANG Air Niugini Pty Limited
+|027 |ANS Air Nostrum L.A.M.S.A.
+|028 |ANZ Air New Zealand Limited
+|029 |ARG Aerolineas Argentinas
+|030 |ASA Alaska Airlines Inc.
+|031 |ATC Air Tanzania Company Ltd.
+|032 |AUA Austrian Airlines, Osterreichische
+|033 |AUI Ukraine International Airlines
+|034 |AUT Cielos del Sur S.A.
+|035 |AVA Aerovias del Continente Americano – Avianca
+|036 |AVN Air Vanuatu (Operations) Limited
+|037 |AWE America West Airlines Inc.
+|038 |AZA Alitalia - Linee Aeree Italiane
+|039 |AZW Air Zimbabwe (Pvt) Ltd.
+|040 |BAG dba Luftfahrtgesellschaft mbH
+|041 |BAW British Airways p.l.c.
+|042 |BBC Biman Bangladesh Airlines
+|043 |BCS European Air Transport
+|044 |BCY Cityjet
+|045 |BEE Jersey European Airways Limited
+|046 |BER Air Berlin GmbH & Co. Luftverkehrs KG
+|047 |BKP Bangkok Airways Co. Ltd.
+|048 |BLF Blue1 Oy
+|049 |BLV Bellview Airlines Ltd.
+|050 |BMA British Midland Airways Ltd.
+|051 |BOT Air Botswana Corporation
+|052 |BPA Blue Panorama Airlines S.p.A.
+|053 |BRA SAS Braathens AS
+|054 |BRU Belavia
+|055 |BRZ Samara Airlines
+|056 |BWA BWIA West Indies Airways Limited
+|057 |CAL China Airlines
+|058 |CAW Comair Ltd.
+|059 |CCA Air China Limited
+|060 |CDG Shandong Airlines
+|061 |CES China Eastern Airlines
+|062 |CHH Hainan Airlines Company Limited
+|063 |CLH Lufthansa CityLine GmbH
+|064 |CLX Cargolux Airlines International S.A.
+|065 |CMI Continental Micronesia, Inc.
+|066 |CMP Compania Panamena de Aviacion, S.A.
+|067 |CNW China Northwest Airlines
+|068 |COA Continental Airlines, Inc.
+|069 |CPA Cathay Pacific Airways Ltd.
+|070 |CPN Caspian Airlines Service Company Ltd.
+|071 |CRL CORSAIR
+|072 |CSA Czech Airlines a.s., CSA
+|073 |CSN China Southern Airlines
+|074 |CTN Croatia Airlines
+|075 |CUB Cubana de Aviacion S.A.
+|076 |CXA Xiamen Airlines
+|077 |CYH China Yunnan Airlines
+|078 |CYP Cyprus Airways Limited
+|079 |DAH Air Algerie
+|080 |DAL Delta Air Lines Inc.
+|081 |DAN Maersk Air A.S.
+|082 |DAT Delta Air Transport N.V.
+|083 |DHK DHL Air Limited
+|084 |DHX DHL International E.C.
+|085 |DLH Deutsche Lufthansa AG
+|086 |DNM Denim Air
+|087 |DTA TAAG - Linhas Aereas de Angola
+|088 |EIN Aer Lingus Limited
+|089 |ELG ALPI Eagles S.p.A.
+|090 |ELL Estonian Air
+|091 |ELY El Al Israel Airlines Ltd.
+|092 |ETD Etihad Airways
+|093 |ETH Ethiopian Airlines Enterprise
+|094 |EVA EVA Airways Corporation
+|095 |EWG Eurowings AG
+|096 |FCN Falcon Air AB
+|097 |FDX FedEx
+|098 |FIN Finnair Oyj
+|099 |FJI Air Pacific Ltd.
+|100 |GBL GB Airways Ltd.
+|101 |GEC Lufthansa Cargo AG
+|102 |GFA Gulf Air Company G.S.C.
+|103 |GHA Ghana Airways Corp.
+|104 |GIA Garuda Indonesia
+|105 |HCY Helios Airways
+|106 |HDA Hong Kong Dragon Airlines Limited
+|107 |HEJ Hellas Jet S.A.
+|108 |HHN Hahn Air Lines
+|109 |HLF Hapag Lloyd Fluggesellschaft
+|110 |HZL Hazelton Airlines dba Regional Express
+|111 |IAC Indian Airlines
+|112 |IAW Iraqi Airways
+|113 |IBB Binter Canarias
+|114 |IBE Iberia - Lineas Aereas de Espana
+|115 |ICE Icelandair
+|116 |ICL C.A.L. Cargo Airlines Ltd.
+|117 |IRA Iran Air
+|118 |IRC Iran Aseman Airlines
+|119 |IRM Mahan Airlines
+|120 |ISR Israir Airlines and Tourism Ltd.
+|121 |ISS Meridiana S.p.A.
+|122 |IYE Yemenia - Yemen Airways
+|123 |JAI Jet Airways (India) Limited
+|124 |JAL Japan Airlines International Co., Ltd.
+|125 |JAT Jat Airways
+|126 |JAZ JALways Co. Ltd.
+|127 |JKK Spanair S.A.
+|128 |KAC Kuwait Airways
+|129 |KAL Korean Air Lines Co. Ltd.
+|130 |KHA Kitty Hawk Aircargo, Inc.
+|131 |KLM KLM Royal Dutch Airlines
+|132 |KOR Air Koryo
+|133 |KQA Kenya Airways
+|134 |KRP Carpatair S.A.
+|135 |LAA Libyan Arab Airlines
+|136 |LAM LAM - Linhas Aereas de Mocambique
+|137 |LAN Lan Airlines S.A.
+|138 |LAP TAM - Transportes Aereos del
+|139 |LBC Albanian Airlines MAK S.H.P.K.
+|140 |LBH Laker Airways (Bahamas) Limited
+|141 |LCO Lan Chile Cargo S.A.
+|142 |LDA Lauda Air Luftfahrt AG
+|143 |LDI Lauda Air S.p.A.
+|144 |LGL Luxair
+|145 |LIL Lithuanian Airlines
+|146 |LLB Lloyd Aereo Boliviano S.A. (LAB)
+|147 |LOT LOT - Polish Airlines
+|148 |LPE Lan Peru S.A.
+|149 |LRC Lineas Aereas Costarricenses S.A.
+|150 |LTU LTU International Airways
+|151 |LXR Air Luxor, S.A.
+|152 |MAH Malev Hungarian Airlines Limited
+|153 |MAK Macedonian Airlines
+|154 |MAS Malaysia Airline System Berhad
+|155 |MAU Air Mauritius
+|156 |MAZ Zambian Airways
+|157 |MDG Air Madagascar
+|158 |MEA Middle East Airlines AirLiban
+|159 |MGL MIAT - Mongolian Airlines
+|160 |MGX Montenegro Airlines
+|161 |MLD Air Moldova
+|162 |MPX Aeromexpress S.A. de C.V.
+|163 |MRS Air Marshall Islands, Inc.
+|164 |MSR Egyptair
+|165 |MXA Compania Mexicana de Aviacion
+|166 |NBK Albarka Air Services Ltd.
+|167 |NCA Nippon Cargo Airlines
+|168 |NMB Air Namibia
+|169 |NTW Nationwide Airlines (Pty) Ltd.
+|170 |NWA Northwest Airlines, Inc.
+|171 |OAL Olympic Airlines
+|172 |OAS Oman Aviation Services Co. (SAOG)
+|173 |PAL Philippine Airlines, Inc.
+|174 |PAO Polynesian Limited
+|175 |PGA Portugalia - Companhia Portuguesa de
+|176 |PIA Pakistan International Airlines
+|177 |PLK Pulkovo Aviation Enterprise
+|178 |PNW Palestinian Airlines
+|179 |PUA Pluna Lineas Aereas Uruguayas S.A.
+|180 |QFA Qantas Airways Ltd.
+|181 |QTR Qatar Airways(Q.C.S.C)
+|182 |RAM Royal Air Maroc
+|183 |RBA Royal Brunei Airlines Sdn. Bhd.
+|184 |REU Air Austral
+|185 |RJA Royal Jordanian
+|186 |ROT TAROM - Transporturile Aeriene Romane
+|187 |RSN Royal Swazi National Airways Corp.
+|188 |RWD Rwandair Express
+|189 |SAA South African Airways
+|190 |SAS Scandinavian Airlines System (SAS)
+|191 |SAT SATA - Air Acores
+|192 |SBI Siberia Airlines
+|193 |SER Aero California
+|194 |SEY Air Seychelles Limited
+|195 |SFR Safair (Proprietary) Ltd.
+|196 |SIA Singapore Airlines Limited
+|197 |SKX Skyways AB
+|198 |SLA Sierra National Airlines
+|199 |SLK SilkAir (S) Pte. Ltd.
+|200 |SLM Surinam Airways Ltd.
+|201 |SNG Air Senegal International
+|202 |SOL Solomon Airlines
+|203 |SQC Singapore Airlines Cargo Pte. Ltd.
+|204 |SUD Sudan Airways Co. Ltd.
+|205 |SVA Saudi Arabian Airlines
+|206 |SWD Southern Winds S.A.
+|207 |SWR SWISS International Air Lines Ltd
+|208 |SYR Syrian Arab Airlines
+|209 |TAI Taca International Airlines, S.A.
+|210 |TAM TAM Linhas Aereas S.A.
+|211 |TAP TAP - Air Portugal
+|212 |TAR Tunisair
+|213 |TAY TNT Airways S.A.
+|214 |THA Thai Airways International Public
+|215 |THT Air Tahiti Nui
+|216 |THY Turkish Airlines Inc.
+|217 |TMA Trans-Mediterranean Airways
+|218 |TNA TransAsia Airways Corporation
+|219 |TSO Transaero Airlines
+|220 |TUA Turkmenistan Airlines
+|221 |UAE Emirates
+|222 |UAL United Airlines, Inc.
+|223 |UPS UPS
+|224 |USA US Airways, Inc.
+|225 |UYC Cameroon Airlines
+|226 |VAP Phuket Airlines Co., Ltd.
+|227 |VDA Volga-Dnepr Airline Joint Stock
+|228 |VIR Virgin Atlantic Airways Limited
+|229 |VLE Volare Airlines S.p.A.
+|230 |VLK Vladivostok Air JSC
+|231 |VRG Varig S.A.
+|232 |VSP Viacao Aerea Sao Paulo, S.A. (VASP)
+|233 |VTA Air Tahiti
+|234 |WIF Wideroe's Flyveselskap A.S.
+|235 |WNT Cargojet Airways Ltd.
+|236 |CRX Crossair
+|237 |WJA WestJet Airlines Ltd.
+|238 |JAS Japan Air System
+|239 |NWW North West Airlines
+|240 |MEP Midwest Express Airlines
+|241 |TWA Trans World Airlines
+|242 |SAB Sabena
+|243 |TUI Tuninter
+|244 |SRT Trans Asian Airlines
+|245 |JBU JetBlue Airways
+|246 |TSC Air Transat
+|247 |SWG Sunwing Airlines
+|248 |FFM Firefly
+|249 |BVT Berjaya Air
+|250 |VLG Vueling Airlines
+|251 |SKY Skymark Airlines
+|252 |JST Jetstar Airways
+|253 |ABX ABX Air
+|254 |CQH Spring Airlines
+|255 |POE Porter Airlines
+|256 |EAQ Eastern Australia
+|257 |EZY EasyJet
+|258 |NLY Niki
+|259 |VOZ Virgin Australia
+|260 |KNA Kunming Airlines
+|261 |CSC Sichuan Airlines
+|262 |VRD Virgin America
+|263 |DKH Juneyao Airlines
+|264 |KEN Kenmore Air
+|265 |XAK Air Kenya
+|266 |NZM Mount Cook Airline
+|267 |FDA Fuji Dream Airlines
+|268 |TAE TAME (Línea Aérea del Ecuador)
+|269 |CFE BA CityFlyer
+|270 |JZA Jazz Aviation
+|271 |CSH Shanghai Airlines
+|272 |BEE Flybe
+|273 |TYR Tyrolean Airways
+|274 |SWA Southwest Airlines
+|275 |XME Australian Air Express
+|276 |BEL Brussels Airlines
+|277 |GCR Tianjin Airlines
+|278 |VOI Volaris
+|279 |ARA Arik Air
+|280 |LNI Lion Air
+|281 |RYR Ryanair
+|282 |SHU Aurora
+|283 |NIG Aero Contractors
+|284 |SCW Malmö Aviation
+|285 |NAX Norwegian Air Shuttle
+|286 |RAR Air Rarotonga
+|287 |CJR Caverton Helicopters
+|288 |KZR Air Astana
+|289 |ROU Air Canada Rouge
+|290 |DWT Darwin Airline
+|291 |UTA UTair Aviation
+|292 |AZN Amaszonas
+|293 |FDB Flydubai
+|294 |UZB Uzbekistan Airways
+|295 |PGT Pegasus Airlines
+|296 |ABY Air Arabia
+|297 |AXB Air India Express
+.4+|009 – Quarter |001 |First quarter of the year
+|002 |Second quarter of the year
+|003 |Third quarter of the year
+|004 |Fourth quarter of the year
+.11+|054 – Contaminant |001 |Wet Surface
+|002 |Snowy Surface
+|003 |Icy Surface
+|004 |Slushy Surface
+|005 |Patchy Wet Surface
+|006 |Patchy Snowy Surface
+|007 |Patchy Icy Surface
+|008 |Patchy Sandy Surface
+|009 |Patchy Dirty Surface
+|010 |Volcanic Ash
+|011 |Patchy Volcanic Ash
+|055 – Skid Mark |001 |Tire Mark
+|====================================================================
+
+Examples:
+
+* A geospecific City Hall especially decorated for the Halloween during
+the month (S002) of October (T010) could have a texture named
+Geocell_D301_S002_T010_LOD_UREF_RREF_City-Hall.rgb.
+* The texture of a geotypical house used during the first (T001) quarter
+(S009) of the year could be named D501_S009_T001_Wxx_House.rgb.
+* Similarly, the uniform (S004) grey (T001) texture used with a Cobra
+helicopter could be named D601_S004_T001_Wxx_Cobra.rgb.
+* A 1024 by 1024 (W10) texture representing an M1A2 tank desert (T001)
+camouflage (S005) could be stored in a file named
+D601_S005_T001_W10_M1A2.rgb.
+* An Airbus 380 model 800 operated by the Emirates (T221) Airlines
+(S006) could be stored in a file named D601_S006_T221_Wxx_A380-800.rgb.
+
+Notes:
+
+* Texture Kind 002 and 009 are complete; the number of months and
+quarters will not change.
+* Texture Kind 004 will expand as new colors are added. Color names are
+defined here: http://en.wiktionary.org/wiki/Appendix:Colors.
+* Texture Kind 005, the Camouflage Paint Scheme, follows a similar
+numbering scheme as the HLA’s RPR-FOM Version 2 Draft 17. The list will
+expand as new camouflages are needed or new values added to the RPR-FOM.
+* Texture Kind 006 will expand as ICAO assigns new airline acronyms.
+* Texture Kind 054 and 055 will expand as new contaminants and skid
+marks are deemed necessary.

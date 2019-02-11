@@ -1,0 +1,61 @@
+[Appendix]
+= Annex H: Informative: JPEG
+
+*Formerly Appendix A.17 in Volume 2 of the OGC CDB Best Practice*
+
+The CDB standard supports JPEG2000 for both VSTI and VSTLM component
+data.
+
+As a result of the high rates of compression there are no real
+advantages to be gained in supporting a broad range of alternate color
+representations (such as single channel representations, indexed color
+representations, RGB-triplet color encoding such as 5-6-5, etc.). The
+underlying motivation behind all such schemes is driven by a desire to
+reduce storage and transmission bandwidths. JPEG-2000 achieves these
+goals and many others, refer to Table A-8 JPEG 2000 Features.
+
+*Table A-8 JPEG 2000 Features*
+
+[cols=",",options="header",]
+|=======================================================================
+a|
+High compression efficiency:
+
+Compression better than 0.25 bits per pixels, 20% compression efficiency
+improvement over JPEG.
+
+ a|
+High dynamic range:
+
+Compress images with various dynamic ranges (e.g. 1-16 bit) for each
+color component.
+
+a|
+*Lossless and lossy compression:*
+
+Lossless compression ratios approx. 1.7:1.
+
+ a|
+*Seamless quality / resolution scalability:*
+
+Without having to download the entire file.
+
+a|
+*Progressive image reconstruction:*
+
+Allows images to be reconstructed with increasing pixel accuracy and
+resolution.
+
+ |*Large images sizes - up to (2^32^ - 1).*
+
+|*Perceptual color space internal coding.* |*Single decompression
+architecture.*
+
+a|
+*Region of interest coding:*
+
+Permits certain ROI’s in the image to be coded and transmitted with
+better quality and less distortion than the rest of the image.
+
+ |*Error resilience during transfers.*
+|=======================================================================

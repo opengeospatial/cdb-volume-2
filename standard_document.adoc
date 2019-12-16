@@ -1,5 +1,5 @@
-:Title: Volume 2: OGC CDB Core: Model and Physical Structure: Informative Annexes
-:titletext: Volume 2: OGC CDB Core: Model and Physical Structure: Informative Annexes
+:Title: OGC CDB Core Model and Physical Structure Annexes (Best Practice)
+:titletext: OGC CDB Core Model and Physical Structure Annexes (Best Practice)
 :doctype: book
 :encoding: utf-8
 :lang: en

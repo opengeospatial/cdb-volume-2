@@ -1,0 +1,12 @@
+{
+        "1": {
+                "OGC_doc_number": "16-005r4",
+                "urn":"http://www.opengis.net/doc/BP/CDB-core-annexes/1.2",
+                "title":"OGC CDB Core Model and Physical Structure Annexes (Best Practice)",
+                "path":"standard_document.adoc",
+                "options": ["--trace"],
+                "a":[
+                        "data-uri"
+                ]
+        }
+}

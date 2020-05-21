@@ -112,8 +112,6 @@ include::annex-h.adoc[]
 
 include::annex-i.adoc[]
 
-include::annex-j.adoc[]
-
 include::annex-m.adoc[]
 
 include::annex-o.adoc[]

@@ -6,7 +6,7 @@ This document provides the Annexes for the CDB Core: Model and Physical Structur
 
 The following are keywords to be used by search engines and document catalogues.
 
-ogcdoc, OGC document,  ogcdoc,  CDB, annexes
+ogcdoc, OGC document, CDB, annexes
 
 [big]*iii.   Preface*
 

@@ -1,4 +1,4 @@
-# OGC CDB Volume 2
+# OGC CDB Volume 2 Core Annexes
  
 ## Content
 

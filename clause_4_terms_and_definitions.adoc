@@ -7,4 +7,4 @@ the word “shall” (not “must”) is the verb form used to indicate a
 requirement to be strictly followed to conform to this Best Practice.
 
 Other Terms and Definitions may be found in Volume 3: OGC CDB Terms and
-Definitions (normative) of Best Practice.
+Definitions (normative).

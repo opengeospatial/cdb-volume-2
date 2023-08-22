@@ -10,7 +10,7 @@ with the previous versions of the CDB standard, the following annex
 
 [cols=",",]
 |=======================================================================
-|OGC Best Practice and CDB 3.2 |OGC CDB Standard Version 1.0
+|OGC Best Practice and CDB 3.2 |OGC CDB Standard Version 1.3
 
 |Formerly Annex A10 in Volume 2 |Annex B Rationale: Sensor Simulation -
 Achieving Device-Independence

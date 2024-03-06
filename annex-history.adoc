@@ -7,5 +7,5 @@
 |2017-02-23 | 1.0 | C. Reed | All |
 |2018-08-28 | 1.1 | C. Reed | All |
 |2019-12-16 | 1.2 | C. Reed | Various |Changes for version 1.2 
-|2023-08-01 | 1.3 | D. Graham | Front Matter |Only editorial changes for version 1.3 
+|2023-08-01 | 1.3 | D. Graham | Front Matter, Scope |Only editorial changes for version 1.3 
 |===
